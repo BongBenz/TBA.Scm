@@ -25,7 +25,7 @@ public class output {
 		}
 		System.out.println("Enter Sales : ");
 		sales = in.nextInt();
-		input.get(0).setSales(new ProcessProjectB(sales));
+		input.get(0).setSales(new process(sales));
 		System.out.println("3. Process");
 		if(sales < 50000){
 			sum =( sales * 5 )/ 100;
@@ -33,14 +33,7 @@ public class output {
 		else
 			sum =( sales * 10 )/ 100;
 		
-		total = (salary+sum);
-		System.out.println("4. Process Sales < or > 20000");
-		if(total<20000){
-			total = 20000;
-		}
-		
-		System.out.println("5. Disployee");
-		System.out.println(input.get(0).toString());
+		System.out.println("4. Display Employee");System.out.println(input.get(0).toString());
 		System.out.println(input.get(0).getSales().toString());
 		System.out.println("Total : "+total);
 	}
